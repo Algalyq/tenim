@@ -1,0 +1,141 @@
+.reviews-container {
+  width: 70%;
+  box-sizing: border-box;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.reviews-title {
+  font-family: 'Comfortaa', sans-serif;
+  font-size: 2.2rem;
+  font-weight: 500;
+  color: #333;
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.reviews-title:after {
+  content: '';
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background-color: #ff6b6b;
+}
+
+.reviews-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.review-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  padding: 25px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.review-avatar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.avatar-placeholder {
+  width: 80px;
+  height: 80px;
+  background-color: #4a6fdc;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Comfortaa', sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.review-content {
+  flex: 1;
+}
+
+.reviewer-name {
+  font-family: 'Comfortaa', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.review-text {
+  font-family: 'Comfortaa', sans-serif;
+  font-size: 1rem;
+  color: #555;
+  font-weight: 400;
+  text-align: justify;
+}
+
+/* Quote styling for review text */
+.review-text:before {
+  content: '"';
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #4a6fdc;
+}
+
+.review-text:after {
+  content: '"';
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #4a6fdc;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .reviews-container {
+    width: 100%;
+    padding: 0 15px;
+    margin: 30px auto;
+  }
+  
+  .reviews-title {
+    font-size: 1.8rem;
+  }
+  
+  .reviews-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .reviews-container {
+    padding: 0 10px;
+    margin: 20px auto;
+  }
+  
+  .reviews-title {
+    font-size: 1.6rem;
+  }
+  
+  .reviewer-name {
+    font-size: 1.1rem;
+  }
+  
+  .review-text {
+    font-size: 0.95rem;
+  }
+}

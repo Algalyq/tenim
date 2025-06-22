@@ -1,0 +1,115 @@
+.contact-container {
+  padding: 40px 20px;
+  background-color: #f8f9fa;
+  border-radius: 20px;
+}
+
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.contact-title {
+  font-family: 'Comfortaa', sans-serif;
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.contact-title:after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background-color: #7b68ee;
+}
+
+.contact-subtitle {
+  font-family: 'Comfortaa', sans-serif;
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 40px;
+  max-width: 600px;
+}
+
+.contact-methods {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  width: 100%;
+  max-width: 800px;
+}
+
+.contact-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 30px;
+  border-radius: 50px;
+  font-family: 'Comfortaa', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  min-width: 250px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.whatsapp-button {
+  background-color: #25D366;
+  color: white;
+}
+
+.whatsapp-button:hover {
+  background-color: #20bd5a;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(37, 211, 102, 0.3);
+}
+
+.telegram-button {
+  background-color: #0088cc;
+  color: white;
+}
+
+.telegram-button:hover {
+  background-color: #0077b5;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 136, 204, 0.3);
+}
+
+.contact-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  filter: brightness(1) invert(0);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .contact-title {
+    font-size: 1.8rem;
+  }
+  
+  .contact-subtitle {
+    font-size: 1rem;
+  }
+  
+  .contact-methods {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contact-button {
+    width: 100%;
+    max-width: 300px;
+  }
+}
