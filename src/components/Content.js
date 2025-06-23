@@ -9,6 +9,7 @@ import { useLanguage } from '../context/LanguageContext';
 const Content = () => {
   const { language, changeLanguage } = useLanguage();
   
+  const whatsappLink = 'https://wa.me/77757962363?text=Hello, I am interested in your program(Бұл мысал, адам қандай тіл таңдап қарағанға байланысты сондай msg келеді)';
   return (
     <div className="content-container">
       {/* Language Selector */}
@@ -43,7 +44,7 @@ const Content = () => {
             <div className="image-container friends-image">
               <img src={friends1} className="rotated-image" alt="Friends learning English" />
               <div className="speech-bubble left">
-                <div className="bubble-text">Lorem ipsum ipsum text</div>
+                <div className="bubble-text">{translations[language].utp_1}</div>
               </div>
               <div className="tv-icon"></div>
             </div>
@@ -52,7 +53,7 @@ const Content = () => {
             <div className="image-container nyc-image">
               <img src={previewNyc} className="rotated-image" alt="New York City preview" />
               <div className="speech-bubble right">
-                <div className="bubble-text">Lorem ipsum brbrbr ipsum text</div>
+                <div className="bubble-text">{translations[language].utp_2}</div>
               </div>
             </div>
             
@@ -63,7 +64,7 @@ const Content = () => {
           </div>
           
           <div className="button-container">
-            <a href="#contact" className="cta-button" style={{ textDecoration: 'none' }}>{translations[language].readMore}</a>
+            <a href={whatsappLink} className="cta-button" style={{ textDecoration: 'none' }}>{translations[language].readMore}</a>
           </div>
         </div>
       </div>

@@ -19,13 +19,13 @@
   padding: 20px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
-.subtitle {
+/* .subtitle {
     font-family: 'Caveat', cursive;
     font-size: 1.8rem;
     color: #ff6b6b;
     font-style: italic;
     font-weight: 500;
-  }
+  } */
 
 .subtitle_timeline{
     font-family: 'Comfortaa', sans-serif;

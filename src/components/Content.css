@@ -13,6 +13,17 @@
   align-items: center;
 }
 
+.title-section{
+  margin: 10px 0;
+}
+
+.bubble-text{ 
+  font-size: 12px;
+  font-weight: 700;
+  /* color: #fff; */
+  text-align: left;
+}
+
 /* Navbar */
 .navbar {
   display: flex;
@@ -143,10 +154,11 @@
 }
 
 .subtitle {
-  font-family: 'Caveat', cursive;
+  /* font-family: 'Caveat', cursive; */
+  font-family: 'Comfortaa', sans-serif;
   font-size: 1.8rem;
-  color: #ff6b6b;
-  font-style: italic;
+  /* color: #ff6b6b; */
+  /* font-style: italic; */
   font-weight: 500;
 }
 
@@ -154,7 +166,7 @@
   font-family: 'Comfortaa', sans-serif;
   font-size: 3rem;
   font-weight: bold;
-  margin: 10px 0;
+  margin: 5px 0;
   color: #333;
 }
 
@@ -224,7 +236,6 @@
   background-color: #9370DB; /* Purple bubble */
   border-radius: 20px;
   transform: rotate(5deg);
-  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
 }
 
 /* Icons */
@@ -286,7 +297,7 @@
 /* Button container */
 .button-container {
   position: relative;
-  margin-top: 30px;
+  margin-top: 10px;
   display: flex;
   justify-content: center;
   z-index: 4;
@@ -346,7 +357,7 @@
   .navbar {
     padding: 15px 20px;
   }
-  
+
   .menu {
     display: none;
   }
@@ -391,10 +402,18 @@
   
   .speech-bubble.right{
     right: -40px;
-    top: -10px;
+    top: -20px;
   }
   .icon-star, .icon-trophy, .tv-icon {
     display: none;
+  }
+
+  .icon-star.right{
+    bottom: 10px;
+  }
+
+  .icon-star.left{
+    bottom: 200px;
   }
 }
 
