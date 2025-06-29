@@ -7,9 +7,24 @@ const LoadingPage = ({ onLoadingComplete }) => {
   const fullText = "Hi, idk txt";
   const [isTypingComplete, setIsTypingComplete] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
+  const [imageLoaded, setImageLoaded] = useState(false);
   
-  // Typing animation effect
+  // Preload the background image
   useEffect(() => {
+    const img = new Image();
+    img.src = previewTrackImg;
+    img.onload = () => {
+      setImageLoaded(true);
+    };
+    return () => {
+      img.onload = null;
+    };
+  }, []);
+
+  // Start typing animation only after image is loaded
+  useEffect(() => {
+    if (!imageLoaded) return;
+    
     let currentIndex = 0;
     const typingInterval = setInterval(() => {
       if (currentIndex < fullText.length) {
@@ -22,7 +37,7 @@ const LoadingPage = ({ onLoadingComplete }) => {
     }, 150); // typing speed
 
     return () => clearInterval(typingInterval);
-  }, []);
+  }, [imageLoaded]);
 
   // Simulate loading completion
   useEffect(() => {
@@ -41,17 +56,18 @@ const LoadingPage = ({ onLoadingComplete }) => {
   return (
     <div 
       className={`loading-page ${!isLoading ? 'fade-out' : ''}`} 
-      style={{ backgroundImage: `url(${previewTrackImg})` }}
+      style={{
+        backgroundImage: imageLoaded ? `url(${previewTrackImg})` : 'none',
+        backgroundColor: !imageLoaded ? '#000000' : 'transparent'
+      }}
     >
       <div className="loading-content">
-        <h1 className="loading-title">{text}</h1>
-
-        <h1 className="second">{text}</h1>
-        {/* <div className="loading-indicator">
-          <div className="loading-dot"></div>
-          <div className="loading-dot"></div>
-          <div className="loading-dot"></div>
-        </div> */}
+        {imageLoaded && (
+          <>
+            <h1 className="loading-title">{text}</h1>
+            <h1 className="second">{text}</h1>
+          </>
+        )}
       </div>
     </div>
   );
