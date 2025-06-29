@@ -50,10 +50,10 @@ const AboutUs = () => {
             
           </div>
           
-          <p className="about-us-description">
+          <div className="about-us-description">
             {/* {translations[language].aboutUsHistory} */}
             <div className="subtitle">{translations[language].aboutUsHistory}</div>
-          </p>
+          </div>
         </div>
         
         <div className="about-us-features">

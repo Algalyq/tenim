@@ -13,6 +13,14 @@
   align-items: center;
 }
 
+.logo {
+  width: 30%;
+}
+
+.logo-tenim{
+  width: 35%;
+}
+
 .title-section{
   margin: 10px 0;
 }
@@ -27,7 +35,7 @@
 /* Navbar */
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 20px 40px;
   width: 70%;
@@ -35,12 +43,6 @@
   z-index: 10;
 }
 
-.logo {
-  font-size: 28px;
-  font-weight: 700;
-  color: white;
-  letter-spacing: 1px;
-}
 
 .menu ul {
   display: flex;
@@ -167,7 +169,7 @@
   font-size: 3rem;
   font-weight: bold;
   margin: 5px 0;
-  color: #333;
+  color: #ff0000;
 }
 
 .hero-section {
@@ -358,6 +360,15 @@
     padding: 15px 20px;
   }
 
+
+  .logo {
+    width: 100%;
+  }
+
+  .logo-tenim{
+    width: 60%;
+  }
+
   .menu {
     display: none;
   }
@@ -418,10 +429,7 @@
 }
 
 @media (max-width: 576px) {
-  .logo {
-    font-size: 22px;
-  }
-  
+
   .content-card {
     padding: 15px;
   }

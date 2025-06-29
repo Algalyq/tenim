@@ -47,7 +47,7 @@ export const translations = {
     usefulMaterials: 'Полезные материалы',
     personalAccount: 'Личный кабинет',
     learnEnglish: 'Обучись у нас и',
-    englishLanguage: 'IELTS',
+    englishLanguage: 'СДАЙ IELTS',
     throughLove: 'бесплатно',
     courseDescription: 'Курс изучения английского языка через известные фильмы',
     readMore: 'пробный урок',
@@ -60,14 +60,14 @@ export const translations = {
     utp_2: 'Только 20 минут в день — и английский станет частью твоей жизни',
     // About Us section
     aboutUsTitle: 'О нас',
-    aboutUsIntro: '«Теңім» — это курсы английского, где всё построено на доверии, поддержке и опыте.',
-    aboutUsHistory: 'Сегодня мы создали пространство, где каждый чувствует себя на равных — независимо от уровня.',
+    aboutUsIntro: '«Теңім» — это курсы английского, где всё построено на доверии, поддержке и опыте',
+    aboutUsHistory: 'Сегодня мы создали пространство, где каждый чувствует себя на равных — независимо от уровня',
     aboutUsWeOffer: 'У нас:',
     aboutUsFeature1: 'Авторская методика, проверенная практикой',
     aboutUsFeature2: 'Удобные уроки — по расписанию и по длительности',
-    aboutUsFeature3: 'Гибкий график, который легко подстроится под тебя',
+    aboutUsFeature3: 'Гибкий график',
     aboutUsFeature4: 'Живое обучение с упором на разговорную практику',
-    aboutUsClosing: 'Хочешь заговорить по-английский - приходи к нам. Вместе — легче.',
+    aboutUsClosing: 'Хочешь заговорить по-английский - приходи к нам. Вместе — легче',
     // History timeline items
     timelineExperience: '3 года опыта',
     timelineTutors: 'Частные репетиторы',
@@ -76,7 +76,7 @@ export const translations = {
     timelineSpace: 'Инклюзивное пространство обучения',
     // Course info section
     howCourseTitle: 'Как проходят наши занятия',
-    courseInfo: 'Наши занятия проходят онлайн на платформах Google Meet, Zoom.'
+    courseInfo: 'Наши занятия проходят онлайн на платформах Google Meet, Zoom'
   },
   kz: {
     programCourses: 'Бағдарлама және курстар',
@@ -86,8 +86,8 @@ export const translations = {
     usefulMaterials: 'Пайдалы материалдар',
     personalAccount: 'Жеке кабинет',
     learnEnglish: 'Бізде оқып',
-    englishLanguage: 'IELTS',
-    throughLove: 'тегін тапсыр',
+    englishLanguage: 'IELTS ТЕГІН',
+    throughLove: ' тапсыр',
     courseDescription: 'Танымал фильмдер арқылы ағылшын тілін үйрену курсы',
     readMore: 'Тегін сабақ',
     siteFor: 'ОНЛАЙН МЕКТЕПКЕ АРНАЛҒАН САЙТ',
@@ -99,14 +99,14 @@ export const translations = {
     utp_2: 'Ағылшын үйрену үшін сағаттап отырудың қажеті жоқ — 20 минут жетеді',
     // About Us section
     aboutUsTitle: 'Біз туралы',
-    aboutUsIntro: '«Тенім» - барлығы сенімге, қолдауға және тәжірибеге негізделген ағылшын тілі курсы.',
-    aboutUsHistory: 'Бүгін біз деңгейі қандай болса да, барлығы өзін тең сезінетін кеңістік құрдық.',
+    aboutUsIntro: '«Теңім» - барлығы сенімге, қолдауға және тәжірибеге негізделген ағылшын тілі курсы',
+    aboutUsHistory: 'Бүгін біз деңгейі қандай болса да, барлығы өзін тең сезінетін кеңістік құрдық',
     aboutUsWeOffer: 'Бізде бар:',
     aboutUsFeature1: 'Авторлық әдістеме, тәжірибеде сыналған',
     aboutUsFeature2: 'Ыңғайлы сабақтар – кестеге және ұзақтығына сәйкес',
-    aboutUsFeature3: 'Икемді кесте, сізге оңай икемделеді',
-    aboutUsFeature4: 'Сөйлеу тәжірибесіне баса назар аударатын тірі оқыту',
-    aboutUsClosing: 'Егер сіз ағылшын тілінде еркін сөйлегіңіз келсе, бізге келіңіз. Бірге оңай.',
+    aboutUsFeature3: 'Икемді кесте',
+    aboutUsFeature4: 'Сөйлеу тәжірибесіне баса назар аударатын оқыту әдістері',
+    aboutUsClosing: 'Егер сіз ағылшын тілінде еркін сөйлегіңіз келсе, бізге келіңіз. Бірге оңай',
     // History timeline items
     timelineExperience: '3 жыл тәжірибе',
     timelineTutors: 'Жеке мұғалімдер',
@@ -115,6 +115,6 @@ export const translations = {
     timelineSpace: 'Инклюзивті оқу кеңістігі',
     // Course info section
     howCourseTitle: 'Біздің сабақтарымыз қалай өтеді',
-    courseInfo: 'Біздің сабақтарымыз Google Meet, Zoom платформаларында онлайн режимінде өткізіледі.'
+    courseInfo: 'Біздің сабақтарымыз Google Meet, Zoom платформаларында онлайн режимінде өткізіледі'
   }
 };

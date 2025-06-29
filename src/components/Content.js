@@ -3,6 +3,7 @@ import nyc2 from '../assets/preview.jpg';
 import friends1 from '../assets/friends_3.jpg';
 import previewNyc from '../assets/usa.jpg';
 import './Content.css';
+import logo from '../assets/Tenim_logo.png';
 import { translations } from '../translations.js';
 import { useLanguage } from '../context/LanguageContext';
 
@@ -16,7 +17,9 @@ const Content = () => {
       <div className="hero-section" style={{ backgroundImage: `url(${nyc2})` }}>
         {/* Navigation Bar */}
         <header className="navbar">
-          <div className="logo">Tenim</div>
+          <div className="logo">
+            <img src={logo} className="logo-tenim"/>
+          </div>
           <nav className="menu">
             <ul>
               <li><a href="#aboutus" style={{ textDecoration: 'none' }}>{translations[language].aboutUs}</a></li>
