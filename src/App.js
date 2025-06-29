@@ -18,15 +18,15 @@ function App() {
 
   return (
     <LanguageProvider>
-      {loading && <LoadingPage onLoadingComplete={handleLoadingComplete} />}
-      <div className={`App ${loading ? 'hidden' : ''}`}>
+      {/* {loading && <LoadingPage onLoadingComplete={handleLoadingComplete} />} */}
+      {/* <div className={`App ${loading ? 'hidden' : ''}`}> */}
         <Content />
         <div id="aboutus"><AboutUs /></div>
         <div id="reviews"><Reviews /></div>
         <div id="courses"><PriceList /></div>
         <div id="contact"><Contact /></div>
         <InstagramButton />
-      </div>
+      {/* </div> */}
     </LanguageProvider>
   );
 }

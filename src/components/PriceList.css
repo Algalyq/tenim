@@ -27,7 +27,7 @@
 
 .price-tabs {
   display: flex;
-  /* flex-direction: column; */
+  flex-direction: column;
   flex-wrap: wrap;
   /* justify-content: center; */
   gap: 10px;

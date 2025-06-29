@@ -65,7 +65,7 @@ const LoadingPage = ({ onLoadingComplete }) => {
         {imageLoaded && (
           <>
             <h1 className="loading-title">{text}</h1>
-            <h1 className="second">{text}</h1>
+            {/* <h1 className="second">{text}</h1> */}
           </>
         )}
       </div>
