@@ -9,9 +9,31 @@ import { useLanguage } from '../context/LanguageContext';
 
 const Content = () => {
   const { language, changeLanguage } = useLanguage();
-  
-  const whatsappLink = 'https://wa.me/77757962363?text=Hello, I am interested in your program(Бұл мысал, адам қандай тіл таңдап қарағанға байланысты сондай msg келеді)';
-  return (
+  const handleWhatsAppNavigation = (e) => {
+    e.preventDefault();
+    const phoneNumber = '77757962363'; // Replace with actual WhatsApp number
+    
+    // Define messages for different languages
+    let message = '';
+    if (language === 'ru') {
+      message = 'Здравствуйте! Меня заинтересовал курс «Теңім». Могли бы вы помочь мне выбрать подходящий тариф?';
+    } else if (language === 'kz') {
+      message = 'Сәлеметсіз бе! Мені «Теңім» курсы қызықтырды. Маған ыңғайлы тариф таңдауға көмектесе аласыздар ма?';
+    } else {
+      message = 'Hello! I would like to register for a trial lesson.';
+    }
+    // Encode the message for URL
+    const encodedMessage = encodeURIComponent(message);
+    
+    // Create WhatsApp URL
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+    
+    // Open WhatsApp in a new tab
+    window.open(whatsappUrl, '_blank');
+  };
+
+
+ return (
     <div className="content-container">
       {/* Language Selector */}
       <div className="hero-section" style={{ backgroundImage: `url(${nyc2})` }}>
@@ -67,7 +89,7 @@ const Content = () => {
           </div>
           
           <div className="button-container">
-            <a href={whatsappLink} className="cta-button" style={{ textDecoration: 'none' }}>{translations[language].readMore}</a>
+            <a onClick={handleWhatsAppNavigation} className="cta-button" style={{ textDecoration: 'none' }}>{translations[language].readMore}</a>
           </div>
         </div>
       </div>
