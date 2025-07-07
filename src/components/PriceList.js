@@ -142,6 +142,30 @@ const PriceList = () => {
     }
   };
   
+  // Function to handle WhatsApp navigation based on language
+  const handleWhatsAppNavigation = (e) => {
+    e.preventDefault();
+    const phoneNumber = '77757962363'; // Replace with actual WhatsApp number
+    
+    // Define messages for different languages
+    let message = '';
+    if (language === 'ru') {
+      message = 'Здравствуйте! Меня заинтересовал курс «Теңім». Могли бы вы помочь мне выбрать подходящий тариф?';
+    } else if (language === 'kz') {
+      message = 'Сәлеметсіз бе! Мені «Теңім» курсы қызықтырды. Маған ыңғайлы тариф таңдауға көмектесе аласыздар ма?';
+    } else {
+      message = 'Hello! I would like to register for a trial lesson.';
+    }
+    // Encode the message for URL
+    const encodedMessage = encodeURIComponent(message);
+    
+    // Create WhatsApp URL
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+    
+    // Open WhatsApp in a new tab
+    window.open(whatsappUrl, '_blank');
+  };
+
   // Function to render a pricing option card
   const renderPricingCard = (typeKey, type) => (
     <div className="pricing-card" key={typeKey}>
@@ -162,7 +186,7 @@ const PriceList = () => {
       </div>
       
       {typeKey === 'trial' && (
-        <a href="#contact" className="trial-button" style={{ textDecoration: 'none' }}>
+        <a href="#contact" onClick={handleWhatsAppNavigation} className="trial-button" style={{ textDecoration: 'none' }}>
           {language === 'ru' ? 'ЗАПИСАТЬСЯ' : language === 'kz' ? 'ЖАЗЫЛУ' : 'SIGN UP'}
         </a>
       )}
