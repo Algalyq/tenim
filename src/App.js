@@ -7,6 +7,7 @@ import PriceList from './components/PriceList';
 import Contact from './components/Contact';
 import InstagramButton from './components/InstagramButton';
 import LoadingPage from './components/LoadingPage';
+import DiscountModal from './components/DiscountModal';
 import { LanguageProvider } from './context/LanguageContext';
 
 function App() {
@@ -24,8 +25,9 @@ function App() {
         <div id="aboutus"><AboutUs /></div>
         <div id="reviews"><Reviews /></div>
         <div id="courses"><PriceList /></div>
-        <div id="contact"><Contact /></div>
+        {/* <div id="contact"><Contact /></div> */}
         <InstagramButton />
+        <DiscountModal />
       {/* </div> */}
     </LanguageProvider>
   );

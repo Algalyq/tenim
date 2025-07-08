@@ -71,7 +71,6 @@ const Content = () => {
               <div className="speech-bubble left">
                 <div className="bubble-text">{translations[language].utp_1}</div>
               </div>
-              <div className="tv-icon"></div>
             </div>
             
             {/* NYC image with speech bubble */}
@@ -82,10 +81,6 @@ const Content = () => {
               </div>
             </div>
             
-            {/* Icons */}
-            <div className="icon-star left"></div>
-            <div className="icon-trophy"></div>
-            <div className="icon-star right"></div> 
           </div>
           
           <div className="button-container">
