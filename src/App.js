@@ -25,7 +25,7 @@ function App() {
         <div id="aboutus"><AboutUs /></div>
         <div id="reviews"><Reviews /></div>
         <div id="courses"><PriceList /></div>
-        {/* <div id="contact"><Contact /></div> */}
+        <div id="contact"><Contact /></div>
         <InstagramButton />
         <DiscountModal />
       {/* </div> */}

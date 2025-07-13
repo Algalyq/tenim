@@ -18,7 +18,7 @@
   /* background-position: top; */
   background-repeat: no-repeat;
   border-radius: 10px;
-  padding: 30px;
+  padding: 54px 32px 32px 32px;
   min-height: 20%;
   max-height: 40%;
   max-width: 80%;
@@ -29,8 +29,8 @@
 
 .close-button {
   position: absolute;
-  top: 15px;
-  right: 15px;
+  /* top: 15px; */
+  right: 32px;
   background: none;
   border: none;
   font-size: 24px;
@@ -46,7 +46,7 @@
 h2 {
   color: #e74c3c;
   margin-top: 0;
-  font-size: 28px;
+  font-size: 22px;
 }
 
 .discount-text {
@@ -59,7 +59,8 @@ h2 {
 .call-to-action {
   font-size: 18px;
   margin-bottom: 18px;
-  color: #555;
+  color: #c0392b;
+  font-weight: bold;
 }
 
 .timer {
@@ -143,19 +144,21 @@ h2 {
 
 @media (max-width: 768px) {
   .discount-modal {
-    padding: 34px;
+    padding: 34px 28px 28px 28px;
   }
   
   h2 {
-    font-size: 24px;
+    font-size: 20px;
   }
   
   .discount-text {
-    font-size: 18px;
+    font-size: 16px;
   }
   
   .call-to-action {
-    font-size: 16px;
+    font-size: 14px;
+    color:#c0392b;
+    font-weight: bold;
   }
   
   .time-value {
