@@ -14,14 +14,8 @@ const Content = () => {
     const phoneNumber = '77757962363'; // Replace with actual WhatsApp number
     
     // Define messages for different languages
-    let message = '';
-    if (language === 'ru') {
-      message = 'Здравствуйте! Меня заинтересовал курс «Теңім». Могли бы вы помочь мне выбрать подходящий тариф?';
-    } else if (language === 'kz') {
-      message = 'Сәлеметсіз бе! Мені «Теңім» курсы қызықтырды. Маған ыңғайлы тариф таңдауға көмектесе аласыздар ма?';
-    } else {
-      message = 'Hello! I would like to register for a trial lesson.';
-    }
+    let message = 'Сәлеметсіз бе! Мені «Теңім» курсы қызықтырды. Маған ыңғайлы тариф таңдауға көмектесе аласыздар ма?';
+    
     // Encode the message for URL
     const encodedMessage = encodeURIComponent(message);
     

@@ -27,7 +27,7 @@ const Contact = () => {
   const whatsappLinkKz = 'https://wa.me/77757962363?text=Сәлеметсіз бе! Мені «Теңім» курсы қызықтырды. Маған ыңғайлы тариф таңдауға көмектесе аласыздар ма?';
   const whatsappLinkRu = 'https://wa.me/77757962363?text=Здравствуйте! Меня заинтересовал курс «Теңім». Могли бы вы помочь мне выбрать подходящий тариф?';
   const telegramLink = 'https://t.me/tenim_ilim';
-  const whatsappLink = language === 'ru' ? whatsappLinkRu : whatsappLinkKz;
+  const whatsappLink = whatsappLinkKz;
   return (
     <div className="contact-container" id="contact">
       <div className="contact-content">
