@@ -20,8 +20,7 @@ const Content = () => {
     const encodedMessage = encodeURIComponent(message);
     
     // Create WhatsApp URL
-    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
-    
+    const whatsappUrl = `https://wa.me/${phoneNumber}`;
     // Open WhatsApp in a new tab
     window.open(whatsappUrl, '_blank');
   };

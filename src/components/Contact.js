@@ -24,8 +24,8 @@ const Contact = () => {
   };
 
   const currentContent = content[language] || content.ru;
-  const whatsappLinkKz = 'https://wa.me/77757962363?text=Сәлеметсіз бе! Мені «Теңім» курсы қызықтырды. Маған ыңғайлы тариф таңдауға көмектесе аласыздар ма?';
-  const whatsappLinkRu = 'https://wa.me/77757962363?text=Здравствуйте! Меня заинтересовал курс «Теңім». Могли бы вы помочь мне выбрать подходящий тариф?';
+  const whatsappLinkKz = 'https://wa.me/77757962363';
+  const whatsappLinkRu = 'https://wa.me/77757962363';
   const telegramLink = 'https://t.me/tenim_ilim';
   const whatsappLink = whatsappLinkKz;
   return (
